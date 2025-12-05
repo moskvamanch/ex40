@@ -1,0 +1,27 @@
+[project]
+name = "ex40"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "ruff>=0.14.8",
+]
+
+[project.scripts]
+ex40 = "ex40:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.ruff]
+# Какие правила включать (можно минимально):
+select = ["E", "F"]
+ignore = []
+
+[tool.ruff.format]
+# Опционально: настройки форматтера
+quote-style = "double"
+indent-style = "space"
+line-ending = "lf"
